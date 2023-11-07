@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/ln">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_detail"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"/>
+
+            <TextView
+                android:id="@+id/tvdetailnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="25sp"
+                android:paddingLeft="@dimen/mainmarginn"
+                android:paddingRight="@dimen/mainmarginn"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <TextView
+                android:id="@+id/tvdetailharga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="18sp"
+                android:paddingLeft="@dimen/mainmarginn"
+                android:paddingRight="@dimen/mainmarginn"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/mainmarginn"
+                android:id="@+id/tvdetaildesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="desc"
+                android:textSize="12sp"
+                android:paddingLeft="@dimen/mainmarginn"
+                android:paddingRight="@dimen/mainmarginn"
+                android:fontFamily="@font/poppins"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/round_rel_red"
+            android:fontFamily="@font/poppins_bold"
+            android:textAllCaps="false"
+            android:layout_margin="@dimen/mainmarginn"
+            android:text="Keranjang"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_margin="@dimen/mainmarginn"
+            android:textColor="@color/white"
+            android:background="@drawable/round_rel_green"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Beli Langsung"/>
+    </LinearLayout>
+
+</RelativeLayout>

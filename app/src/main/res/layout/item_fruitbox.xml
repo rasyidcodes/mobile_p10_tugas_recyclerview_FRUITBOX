@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/mainmarginn"
+    >
+    <LinearLayout
+        android:layout_marginLeft="@dimen/mainmarginn"
+        android:layout_marginRight="@dimen/mainmarginn"
+        android:background="@drawable/round_linear"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+           <ImageView
+               android:id="@+id/img_buah"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="@dimen/mainmarginn"
+               android:src="@mipmap/ic_launcher"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/mainmarginn"
+                android:layout_marginRight="@dimen/mainmarginn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_buah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buah Strawberry"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_semibold"/>
+
+                <TextView
+                    android:id="@+id/tv_harga"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 8000"/>
+
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btrasa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:background="@drawable/round_button_green"
+                        android:text="Good Quality"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
