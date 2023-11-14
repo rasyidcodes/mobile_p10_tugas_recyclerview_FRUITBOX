@@ -11,7 +11,7 @@ import com.example.fruitbox.databinding.ItemFruitboxBinding
 
 typealias OnClickFruit = (Fruit) -> Unit
 
-class FruitAdapter(private val listFruit : List<Fruit>,
+class FruitAdapter(private var listFruit : List<Fruit>,
                    private val onClickFruit: OnClickFruit):
     RecyclerView.Adapter<FruitAdapter.ItemFruitViewHolder>() {
 
@@ -49,7 +49,7 @@ class FruitAdapter(private val listFruit : List<Fruit>,
     }
 
     fun updateData(newFruitList: List<Fruit>) {
-        var fruitList = newFruitList
+        listFruit = newFruitList
         notifyDataSetChanged() // Memperbarui tampilan RecyclerView setelah data berubah
     }
 
@@ -68,6 +68,7 @@ class FruitAdapter(private val listFruit : List<Fruit>,
     override fun getItemCount(): Int {
         return listFruit.size
     }
+
 
 
 }
