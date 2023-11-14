@@ -6,5 +6,4 @@ data class Fruit(
     val harga: Int = 0,
     val gambar: String = "",
     val detail: String = "",
-
 )

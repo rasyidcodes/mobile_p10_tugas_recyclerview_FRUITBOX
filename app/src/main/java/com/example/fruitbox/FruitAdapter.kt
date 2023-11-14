@@ -30,6 +30,7 @@ class FruitAdapter(private val listFruit : List<Fruit>,
                 }else{
                     btrasa.setBackgroundResource(R.drawable.round_button_red)
                 }
+
                 Glide.with(itemView)
                     .load(data.gambar) // Assuming data.gambar is the image URL
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
